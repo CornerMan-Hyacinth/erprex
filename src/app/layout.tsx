@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import {
   dmSansBold,
@@ -17,7 +16,7 @@ import {
   interMediumItalic,
   interRegular,
   interSemiBold,
-} from "@/lib/configs/fonts";
+} from "@/lib/config/fonts";
 
 export const metadata: Metadata = {
   title: "Erprex",
