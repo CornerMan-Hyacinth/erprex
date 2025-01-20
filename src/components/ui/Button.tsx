@@ -33,6 +33,7 @@ export const RoundButton: FC<RoundButtonProps> = ({
       />
       <button
         className={`${className} bg-${bgColor} h-14 px-10 flex items-center justify-center space-x-4 rounded-full`}
+        onClick={onClick}
       >
         <span className="text-white text-base">{children}</span>
         {hasIcon && (
@@ -79,6 +80,7 @@ export const BorderButton: FC<ButtonProps> = ({
   return (
     <button
       className={`${className} border border-${color} bg-transparent text-${color} h-12 w-32 flex items-center justify-center space-x-2 rounded-md`}
+      onClick={onClick}
     >
       {children}
     </button>

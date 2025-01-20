@@ -3,7 +3,6 @@
 import { TestimonialCard } from "@/components/ui/Cards";
 import ScrollTools from "@/components/general/ScrollTools";
 import { RoundButton } from "@/components/ui/Button";
-import Nav from "@/components/ui/Nav";
 import { TitleText } from "@/components/ui/Text";
 import { testimonialData } from "@/lib/mocks/testimonialMock";
 import Image from "next/image";
@@ -453,7 +452,7 @@ export default function Home() {
 
         <div className="flex flex-col items-center mt-20">
           <p className="text-2xl text-black mb-10 w-2/3 text-center">
-            Your ERP software should cover at least 90% of your business'
+            Your ERP software should cover at least 90% of your business&apos;
             operations. Automate repetitive processes and eliminate unnecessary
             errors.
           </p>

@@ -4,8 +4,7 @@ import Image from "next/image";
 import { RectButton } from "./Button";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { BodyText, TitleText } from "./Text";
+import { TitleText } from "./Text";
 
 const Nav = () => {
   const router = useRouter();
