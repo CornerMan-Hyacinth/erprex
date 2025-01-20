@@ -82,7 +82,7 @@ const Footer = () => {
         <p className="text-white opacity-70 text-sm mt-4 md:mt-0">
           2024 Erprex Technologies. All rights reserved.
         </p>
-        <div className="flex items-center space-x-7 text-myBrown text-3xl">
+        <div className="flex items-center space-x-7 text-white text-3xl">
           <a
             href="https://facebook.com/profile.php?id=61564679800405"
             target="_blank"

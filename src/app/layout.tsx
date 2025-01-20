@@ -19,6 +19,7 @@ import {
 } from "@/lib/config/fonts";
 import Nav from "@/components/ui/Nav";
 import Footer from "@/components/ui/Footer";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Erprex",
@@ -32,6 +33,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src="https://cdn.weglot.com/weglot.min.js"
+          strategy="beforeInteractive"
+        />
+        <Script id="weglot-init" strategy="beforeInteractive">
+          {`
+            Weglot.initialize({
+              api_key: 'wg_839bfed9490cac911d56621ecfd1a1217'
+            });
+          `}
+        </Script>
+      </head>
       <body
         className={`${dmSansBold.variable} ${dmSansBoldItalic.variable} ${dmSansItalic.variable} ${dmSansMedium.variable} ${dmSansMediumItalic.variable} ${dmSansRegular.variable} ${dmSansSemiBold.variable} ${interBold.variable} ${interBoldItalic.variable} ${interItalic.variable} ${interLight.variable} ${interMedium.variable} ${interMediumItalic.variable} ${interRegular.variable} ${interSemiBold.variable} antialiased bg-my-bg`}
       >
