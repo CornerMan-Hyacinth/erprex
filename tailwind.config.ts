@@ -12,7 +12,8 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         "my-blue": "#1E40AF",
-        "my-bg": "#E5E5E9"
+        "my-bg": "#E5E5E9",
+        "my-shadow": "#A5A2A2",
       },
     },
   },

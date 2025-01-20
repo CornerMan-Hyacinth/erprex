@@ -17,6 +17,8 @@ import {
   interRegular,
   interSemiBold,
 } from "@/lib/config/fonts";
+import Nav from "@/components/ui/Nav";
+import Footer from "@/components/ui/Footer";
 
 export const metadata: Metadata = {
   title: "Erprex",
@@ -31,9 +33,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dmSansBold.variable} ${dmSansBoldItalic.variable} ${dmSansItalic.variable} ${dmSansMedium.variable} ${dmSansMediumItalic.variable} ${dmSansRegular.variable} ${dmSansSemiBold.variable} ${interBold.variable} ${interBoldItalic.variable} ${interItalic.variable} ${interLight.variable} ${interMedium.variable} ${interMediumItalic.variable} ${interRegular.variable} ${interSemiBold.variable} antialiased`}
+        className={`${dmSansBold.variable} ${dmSansBoldItalic.variable} ${dmSansItalic.variable} ${dmSansMedium.variable} ${dmSansMediumItalic.variable} ${dmSansRegular.variable} ${dmSansSemiBold.variable} ${interBold.variable} ${interBoldItalic.variable} ${interItalic.variable} ${interLight.variable} ${interMedium.variable} ${interMediumItalic.variable} ${interRegular.variable} ${interSemiBold.variable} antialiased bg-my-bg`}
       >
-        {children}
+        <Nav />
+        <main className="font-[family-name:var(--font-inter-regular)]">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
