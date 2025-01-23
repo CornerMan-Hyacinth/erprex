@@ -6,7 +6,7 @@ import { RxArrowTopRight } from "react-icons/rx";
 interface RoundButtonProps {
   bgColor: string;
   hasIcon?: boolean;
-  onClick: () => void;
+  onClick?: () => void;
   className?: string;
   children: ReactNode;
 }

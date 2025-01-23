@@ -516,7 +516,7 @@ export default function Home() {
             </h3>
 
             <Link
-              href={"/contact"}
+              href={"/faqs"}
               className="w-fit px-10 py-2 rounded-full flex items-center space-x-4 border border-black border-opacity-30"
             >
               <span className="text-black text-sm">Want more FAQs?</span>

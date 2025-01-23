@@ -9,6 +9,16 @@ const nextConfig: NextConfig = {
     });
     return config;
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.kcak11.com",
+        port: "",
+        pathname: "",
+      },
+    ],
+  },
 };
 
 export default nextConfig;

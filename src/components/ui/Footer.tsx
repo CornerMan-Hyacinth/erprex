@@ -1,116 +1,106 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaInstagram, FaLocationPin, FaXTwitter } from "react-icons/fa6";
+import {
+  FaFacebook,
+  FaSquareInstagram,
+  FaSquareXTwitter,
+} from "react-icons/fa6";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
-  return (
-    <footer className="w-full pb-7 z-10 bg-black md:pt-20 pt-10 font-[family-name:var(--font-inter-regular)]">
-      <div className="flex flex-col md:flex-row items-start justify-between xl:px-20 lg:px-10 px-4">
-        <div className="md:w-1/2">
-          <div className="lg:w-20 md:w-[15vw] w-[30vw] md:h-20 h-[8vh] relative">
-            <Image
-              alt="Erprex logo"
-              src={"/icons/erprex_logo.png"}
-              fill
-              className="object-cover"
-            />
-          </div>
+  const pathname = usePathname();
 
-          <p className="text-xl text-white md:mt-5 mt-3 opacity-80 lg:w-2/3">
-            Give your business the competitive edge it needs. Our robust ERP
-            systems provide the tools you need to succeed.
-          </p>
-
-          <div className="flex flex-wrap items-center lg:space-x-10 space-x-5 md:mt-10 mt-6 text-base">
-            <Link
-              href={"/"}
-              className=" text-white hover:text-myBrown md:text-base text-sm hover:underline duration-300 ease-in-out"
-            >
-              Home
-            </Link>
-            <Link
-              href={"/solutions"}
-              className=" text-white hover:text-myBrown md:text-base text-sm hover:underline duration-300 ease-in-out"
-            >
-              Solutions
-            </Link>
-            <Link
-              href={"/contact"}
-              className=" text-white hover:text-myBrown md:text-base text-sm hover:underline duration-300 ease-in-out"
-            >
-              Contact
-            </Link>
-            <a
-              href="https://demo.erprex.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className=" text-white hover:text-myBrown md:text-base text-sm hover:underline duration-300 ease-in-out">
-                Demo
-              </button>
-            </a>
-
-            <Link
-              href={"/privacy"}
-              className=" text-white hover:text-myBrown md:text-base text-sm hover:underline duration-300 ease-in-out"
-            >
-              Privacy
-            </Link>
-          </div>
-        </div>
-
-        <div className="flex flex-col">
-          <p className="md:text-lg text-base text-white mt-10 md:mt-0">
-            Offices
-          </p>
-          <div className="w-fit">
-            <div className="flex items-center space-x-2 text-white md:text-base text-sm md:mt-5 mt-3">
-              <FaLocationPin />
-              <span>Nigeria - Headquarters</span>
-            </div>
-            <p className="text-white text-sm opacity-70 md:mt-3 mt-1">
-              Chief Worlu Street, Elelenwo Road,
-              <br />
-              Port-Harcourt, Rivers
-            </p>
-          </div>
-        </div>
+  return pathname.includes("/contact") ? (
+    <div />
+  ) : (
+    <footer className="w-full flex items-end justify-between z-10 bg-black py-10 font-[family-name:var(--font-inter-regular)] md:px-10 px-4">
+      <div className="w-1/4">
+        <Image
+          alt="Erprex logo"
+          src={"/images/erprex_logo_white.png"}
+          width={200}
+          height={200}
+          className="object-cover"
+        />
+        <p className="mt-5 text-white text-2xl">Copyright &copy; 2025</p>
+        <p className="mt-2 text-white text-base opacity-70">
+          Wise Investment, Big returns
+        </p>
       </div>
 
-      <div className="xl:px-20 md:px-10 px-4 flex flex-col-reverse md:flex-row justify-between items-center mt-14">
-        <p className="text-white opacity-70 text-sm mt-4 md:mt-0">
-          2024 Erprex Technologies. All rights reserved.
-        </p>
-        <div className="flex items-center space-x-7 text-white text-3xl">
-          <a
-            href="https://facebook.com/profile.php?id=61564679800405"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button>
-              <FaFacebookSquare />
-            </button>
-          </a>
+      <div className="w-2/3">
+        <div className="flex items-start justify-between">
+          <div className="flex gap-x-10">
+            <div className="space-y-5">
+              <Link
+                href={"/"}
+                className="w-full text-base text-white border-l-2 border-white border-opacity-30 py-2 px-10 block"
+              >
+                Home
+              </Link>
+              <Link
+                href={"/contact"}
+                className="w-full text-base text-white border-l-2 border-white border-opacity-30 py-2 px-10 block"
+              >
+                Contact Us
+              </Link>
+            </div>
 
-          <a
-            href="https://instagram.com/erprex"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button>
-              <FaInstagram />
-            </button>
-          </a>
+            <div className="space-y-5">
+              <Link
+                href={"/solutions"}
+                className="w-full text-base text-white border-l-2 border-white border-opacity-30 py-2 px-10 block"
+              >
+                Solutions
+              </Link>
+              <Link
+                href={"/faqs"}
+                className="w-full text-base text-white border-l-2 border-white border-opacity-30 py-2 px-10 block"
+              >
+                FAQs
+              </Link>
+            </div>
 
-          <a
-            href="https://x.com/erprex_tech?t=F1pTWLWO2d07aW0TkX6ipw&s=09"
-            target="_blank"
-            rel="noopener noreferrer"
+            <div className="space-y-5">
+              <Link
+                href={"/privacy"}
+                className="w-full text-base text-white border-l-2 border-white border-opacity-30 py-2 px-10 block"
+              >
+                Privacy Policy
+              </Link>
+              {/* <Link
+                href={"/faqs"}
+                className="w-full text-lg text-white border-l-4 border-white border-opacity-30 py-2 px-10 block"
+              >
+                FAQs
+              </Link> */}
+            </div>
+          </div>
+
+          <Link
+            href={"/contact?q=quote"}
+            className="w-fit py-2 px-10 border border-white text-white text-base hover:bg-white hover:text-black duration-300 ease-in-out rounded-md"
           >
-            <button>
-              <FaXTwitter />
-            </button>
+            Get in Touch
+          </Link>
+        </div>
+
+        <hr
+          className="w-full bg-white opacity-30 my-10"
+          style={{ height: "2px" }}
+        />
+
+        <div className="flex justify-end space-x-7">
+          <a href="">
+            <FaFacebook color="#1e40af" size={30} />
+          </a>
+          <a href="">
+            <FaSquareXTwitter color="#1e40af" size={30} />
+          </a>
+          <a href="">
+            <FaSquareInstagram color="#1e40af" size={30} />
           </a>
         </div>
       </div>

@@ -10,8 +10,10 @@ const Nav = () => {
   const router = useRouter();
   const pathname = usePathname();
 
-  return (
-    <div className="w-full flex items-center justify-center md:px-10 px-4 py-4 bg-transparent font-[family-name:var(--font-inter-regular)]">
+  return pathname.startsWith("/contact") ? (
+    <div />
+  ) : (
+    <div className="w-full sticky flex items-center justify-center md:px-10 px-4 py-4 bg-transparent font-[family-name:var(--font-inter-regular)]">
       <nav className="h-16 w-full bg-white flex items-center justify-between px-7 rounded-lg shadow-lg shadow-my-shadow">
         <div className="h-10 w-10 relative overflow-hidden">
           <Image
@@ -68,17 +70,17 @@ const Nav = () => {
             )}
           </Link>
 
-          <Link href={"/contact-us"} className="text-lg text-black">
-            {pathname === "/contact-us" ? (
+          <Link href={"/contact"} className="text-lg text-black">
+            {pathname === "/contact" ? (
               <TitleText weight="bold" className="text-my-blue">
-                Contact Us
+                Contact
               </TitleText>
             ) : (
               <TitleText
                 weight="regular"
                 className="opacity-70 hover:opacity-100 duration-300 ease-in-out"
               >
-                Contact Us
+                Contact
               </TitleText>
             )}
           </Link>

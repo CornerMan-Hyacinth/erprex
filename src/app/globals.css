@@ -34,3 +34,9 @@ body {
     transform: translateX(-50%);
   }
 }
+
+/* For Firefox */
+.scrollable-content {
+  scrollbar-width: thin; /* Options: auto, thin, none */
+  scrollbar-color: #3d3a3a #c5c4c4; /* thumb color track color */
+}

@@ -22,3 +22,63 @@ export const HomeFaq = () => {
     </div>
   );
 };
+
+export const GeneralFaq = () => {
+  return (
+    <div className="w-full">
+      {faqData.general.map((item, index) => (
+        <FaqCard key={index} question={item.question} answer={item.answer} />
+      ))}
+    </div>
+  );
+};
+
+export const MobileAppFaq = () => {
+  return (
+    <div className="w-full">
+      {faqData.mobile_app.map((item, index) => (
+        <FaqCard key={index} question={item.question} answer={item.answer} />
+      ))}
+    </div>
+  );
+};
+
+export const CustomSolutionsFaq = () => {
+  return (
+    <div className="w-full">
+      {faqData.custom_solutions.map((item, index) => (
+        <FaqCard key={index} question={item.question} answer={item.answer} />
+      ))}
+    </div>
+  );
+};
+
+export const GettingStartedFaq = () => {
+  return (
+    <div className="w-full">
+      {faqData.getting_started.map((item, index) => (
+        <FaqCard key={index} question={item.question} answer={item.answer} />
+      ))}
+    </div>
+  );
+};
+
+export const SecurityFaq = () => {
+  return (
+    <div className="w-full">
+      {faqData.security.map((item, index) => (
+        <FaqCard key={index} question={item.question} answer={item.answer} />
+      ))}
+    </div>
+  );
+};
+
+export const HostingFaq = () => {
+  return (
+    <div className="w-full">
+      {faqData.hosting_and_maintenance.map((item, index) => (
+        <FaqCard key={index} question={item.question} answer={item.answer} />
+      ))}
+    </div>
+  );
+};
