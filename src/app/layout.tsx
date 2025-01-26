@@ -47,10 +47,10 @@ export default function RootLayout({
         </Script>
       </head>
       <body
-        className={`${dmSansBold.variable} ${dmSansBoldItalic.variable} ${dmSansItalic.variable} ${dmSansMedium.variable} ${dmSansMediumItalic.variable} ${dmSansRegular.variable} ${dmSansSemiBold.variable} ${interBold.variable} ${interBoldItalic.variable} ${interItalic.variable} ${interLight.variable} ${interMedium.variable} ${interMediumItalic.variable} ${interRegular.variable} ${interSemiBold.variable} antialiased bg-my-bg`}
+        className={`${dmSansBold.variable} ${dmSansBoldItalic.variable} ${dmSansItalic.variable} ${dmSansMedium.variable} ${dmSansMediumItalic.variable} ${dmSansRegular.variable} ${dmSansSemiBold.variable} ${interBold.variable} ${interBoldItalic.variable} ${interItalic.variable} ${interLight.variable} ${interMedium.variable} ${interMediumItalic.variable} ${interRegular.variable} ${interSemiBold.variable} antialiased bg-my-bg `}
       >
-        <Nav />
-        <main className="font-[family-name:var(--font-inter-regular)]">
+        {/* <Nav /> */}
+        <main className="font-[family-name:var(--font-inter-regular)] min-h-screen">
           {children}
         </main>
         <Footer />

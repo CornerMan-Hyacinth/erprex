@@ -40,17 +40,17 @@ const Nav = () => {
             )}
           </Link>
 
-          <Link href={"/solutions"} className="text-lg text-black">
-            {pathname === "/solutions" ? (
+          <Link href={"/features"} className="text-lg text-black">
+            {pathname === "/features" ? (
               <TitleText weight="bold" className="text-my-blue">
-                Solutions
+                Features
               </TitleText>
             ) : (
               <TitleText
                 weight="regular"
                 className="opacity-70 hover:opacity-100 duration-300 ease-in-out"
               >
-                Solutions
+                Features
               </TitleText>
             )}
           </Link>
