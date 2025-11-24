@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Erprex — Modern ERP Solutions for Growing Businesses
 
-## Getting Started
+Erprex is a software agency that builds simple, powerful, and scalable ERP systems and web applications for businesses.
+This repository contains the public source code for the official Erprex landing page.
 
-First, run the development server:
+## About Erprex
+
+Erprex helps businesses manage and automate their operations with modern ERP tools such as:
+
+- Inventory Management
+- Sales & Invoicing
+- Procurement
+- Customer Management
+- Reporting & Analytics
+- Custom Modules for Industry Needs
+
+The landing page showcases these services and provides an entry point for business owners looking to upgrade their operations.
+
+## Tech Stack
+
+- Next.js
+- Tailwind CSS
+- TypeScript
+- Vercel (for deployment)
+
+## Running Locally
+
+1. ### Clone the repository
+
+```bash
+git clone https://github.com/CornerMan-Hyacinth/erprex.git
+```
+
+2. ### Navigate into the project
+
+```bash
+cd erprex
+```
+
+3. ### Install dependencies
+
+```bash
+npm install
+```
+
+4. ### Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. ### Visit:
+   [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Live Demo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+[https://erprex.vercel.app](https://erprex.vercel.app)
 
-## Learn More
+## Screenshot
 
-To learn more about Next.js, take a look at the following resources:
+![Erprex Screenshot](https://raw.githubusercontent.com/CornerMan-Hyacinth/erprex/main/public/images/erprex_landing.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+MIT License
 
-## Deploy on Vercel
+## Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For ERP system development or business automation
+Email: hycorner462@gmail.com (please mention erp in the subject of the email)
+Phone: +2347085050878
