@@ -50,10 +50,10 @@ const Footer = () => {
 
             <div className="space-y-5">
               <Link
-                href={"/solutions"}
+                href={"/features"}
                 className="w-full text-base text-white border-l-2 border-white border-opacity-30 py-2 px-10 block"
               >
-                Solutions
+                Features
               </Link>
               <Link
                 href={"/faqs"}
@@ -70,12 +70,6 @@ const Footer = () => {
               >
                 Privacy Policy
               </Link>
-              {/* <Link
-                href={"/faqs"}
-                className="w-full text-lg text-white border-l-4 border-white border-opacity-30 py-2 px-10 block"
-              >
-                FAQs
-              </Link> */}
             </div>
           </div>
 
