@@ -622,13 +622,13 @@ export default function Home() {
             </h3>
             <div className="mt-8 md:mt-0 w-full md:w-fit">
               <Link
-                href={"/contact-us"}
+                href={"/contact"}
                 className="bg-white text-black lg:text-base text-sm py-3 px-16 w-full md:w-fit rounded-full block hover:bg-black hover:text-white duration-300 ease-in-out text-center"
               >
                 Contact Us
               </Link>
               <Link
-                href={`/contact-us?p=demo`}
+                href={`/contact?p=demo`}
                 className="bg-black text-white lg:text-base text-sm py-3 px-16 w-full md:w-fit rounded-full block mt-5 hover:bg-white hover:text-black duration-300 ease-in-out"
               >
                 Get a Demo

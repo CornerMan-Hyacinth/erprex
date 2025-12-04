@@ -42,9 +42,9 @@ const FeaturesPage = () => {
     <div className="w-full min-h-screen bg-my-bg flex justify-between space-x-20 overflow-x-hidden lg:px-32 md:px-10 px-4 relative hide-scrollbar">
       <div
         // ref={leftRef}
-        className="w-[20vw] max-h-[70vh] mt-24 border border-black relative"
+        className="w-[20vw] max-h-[70vh] mt-24 relative"
       >
-        <div className="sticky bottom-0 flex flex-col gap-y-4 h-fit border border-black">
+        <div className="sticky bottom-0 flex flex-col gap-y-4 h-fit">
           <div
             className={`pl-2 border-l-4 cursor-pointer ${
               featureInView === 1
