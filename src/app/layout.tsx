@@ -17,7 +17,6 @@ import {
   interRegular,
   interSemiBold,
 } from "@/lib/config/fonts";
-import Nav from "@/components/ui/Nav";
 import Footer from "@/components/ui/Footer";
 import Script from "next/script";
 

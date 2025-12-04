@@ -13,7 +13,6 @@ function BudgetRangeSlider({
   max,
   onChange,
   step = 10,
-  isLg,
 }: BudgetRangeSliderProps) {
   const sliderRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState<"min" | "max" | null>(null);
@@ -63,7 +62,7 @@ function BudgetRangeSlider({
       const newValue =
         Math.round((percentage * (max - min) + min) / step) * step;
 
-      setValues((prev) => {
+      setValues(() => {
         let newValues: [number, number];
 
         if (isDragging === "min") {

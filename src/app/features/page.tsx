@@ -11,7 +11,7 @@ const FeaturesPage = () => {
   const rightRef = useRef<HTMLDivElement>(null);
 
   const [featureInView, setFeatureInView] = useState(1);
-  const [leftHeight, setLeftHeight] = useState("auto");
+  // const [leftHeight, setLeftHeight] = useState("auto");
 
   useEffect(() => {
     const handleScroll = () => {

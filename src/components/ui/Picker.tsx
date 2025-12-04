@@ -2,13 +2,13 @@ import countries from "countries-phone-masks";
 import Image from "next/image";
 import { FC } from "react";
 
-type CountryType = {
-  name: string;
-  code: string;
-  iso: string;
-  flag: string;
-  mask: string[];
-};
+// type CountryType = {
+//   name: string;
+//   code: string;
+//   iso: string;
+//   flag: string;
+//   mask: string[];
+// };
 
 interface PhoneCodePickerProps {
   currentPosition: number;

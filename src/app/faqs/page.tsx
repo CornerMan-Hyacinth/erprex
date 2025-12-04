@@ -31,9 +31,9 @@ const FAQsPage = () => {
         </TitleText>
       </h1>
       <p className="text-xl text-black w-1/2 text-center self-center mt-7 opacity-70 mb-10">
-        Find answers to our most commonly asked questions below. Can't find what
-        you're looking for? Our support team is always here to help. Browse
-        through these topics or{" "}
+        Find answers to our most commonly asked questions below. Can&apos;t find
+        what you&apos;re looking for? Our support team is always here to help.
+        Browse through these topics or{" "}
         <Link href="/contact" className="text-my-blue underline">
           reach out
         </Link>{" "}
@@ -123,13 +123,13 @@ const FAQsPage = () => {
         <h3>
           <TitleText weight="medium" className="text-4xl text-black">
             Still have questions?{" "}
-            <span className="text-my-blue">Let's talk!</span>
+            <span className="text-my-blue">Let&apos;s talk!</span>
           </TitleText>
         </h3>
         <p className="text-xl text-black opacity-70 mt-7 text-center w-2/3 mb-14">
           Whether you need detailed explanations or personalized solutions, our
           experts are just a click away. Schedule a free consultation and get
-          the answers you're looking for.
+          the answers you&apos;re looking for.
         </p>
 
         <Link href={"/contact?q=consultation"}>

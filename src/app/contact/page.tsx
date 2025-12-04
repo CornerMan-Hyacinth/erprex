@@ -30,6 +30,7 @@ const ContactPage = () => {
     channel: "",
   });
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const onNext = (v: any) => {
     setDetails((prev) => ({ ...prev, ...v }));
     setStep((prev) => ++prev);
@@ -155,8 +156,10 @@ const FirstStep = ({
   initialValues,
   onNext,
 }: {
+  /* eslint-disable @typescript-eslint/no-explicit-any */
   initialValues: any;
   onNext: (v: any) => void;
+  /* eslint-enable @typescript-eslint/no-explicit-any */
 }) => {
   const [inputs, setInputs] = useState({
     subject: "",
