@@ -17,6 +17,7 @@ import {
   interRegular,
   interSemiBold,
 } from "@/lib/config/fonts";
+import Nav from "@/components/ui/Nav";
 import Footer from "@/components/ui/Footer";
 import Script from "next/script";
 
@@ -48,7 +49,7 @@ export default function RootLayout({
       <body
         className={`${dmSansBold.variable} ${dmSansBoldItalic.variable} ${dmSansItalic.variable} ${dmSansMedium.variable} ${dmSansMediumItalic.variable} ${dmSansRegular.variable} ${dmSansSemiBold.variable} ${interBold.variable} ${interBoldItalic.variable} ${interItalic.variable} ${interLight.variable} ${interMedium.variable} ${interMediumItalic.variable} ${interRegular.variable} ${interSemiBold.variable} antialiased bg-my-bg `}
       >
-        {/* <Nav /> */}
+        <Nav />
         <main className="font-[family-name:var(--font-inter-regular)] min-h-screen">
           {children}
         </main>
