@@ -15,7 +15,7 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "cdn.kcak11.com",
         port: "",
-        pathname: "",
+        pathname: "/**",
       },
     ],
   },
